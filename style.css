@@ -15,7 +15,7 @@ body {
   font-family: 'Quincy CF', serif;
   background-color: #fff;
   color: #111;
-  line-height: 1.6;
+  line-height: 1.4;
 }
 main {
   max-width: 700px;
@@ -28,14 +28,14 @@ main {
   margin-bottom: 1rem;
 }
 h1 {
-  font-size: 2.5rem;
+  font-size: 2.6rem;
   font-weight: bold;
-  margin-bottom: 1rem;
+  margin-bottom: 1.7rem;
 }
 h2 {
   font-size: 1.4rem;
   font-weight: bold;
-  margin-bottom: 2rem;
+  margin-bottom: 3rem;
 }
 p {
   font-size: 1rem;
@@ -53,14 +53,47 @@ p {
 }
 .footer-img {
   width: 100%;
-  display: flex;
-  flex-wrap: wrap;
 }
 .top-block {
   display: flex;
-  max-width: 50%;
+  max-width: 100%;
+  flex-wrap: nowrap;
+  height: auto;
 }
 .btm-block {
   display: flex;
+  max-width: 100%;
+  flex-wrap: nowrap;
+  height: auto;
+  padding-top: 6px;
+  padding-bottom: 4rem;
+}
+.img-left, .img-right {
   max-width: 50%;
+}
+.img-left {
+  padding-right: 6px;
+}
+
+@media only screen and (max-width: 478px) {
+  .footer-img {
+    width: 100%;
+  }
+  .top-block {
+    display: flex;
+    max-width: 100%;
+    flex-wrap: wrap;
+    height: auto;
+  }
+  .btm-block {
+    display: flex;
+    max-width: 100%;
+    flex-wrap: wrap;
+    height: auto;
+    padding-top: 6px;
+    padding-bottom: 5rem;
+  }
+  .img-left, .img-right {
+    max-width: 100%;
+  }
 }
